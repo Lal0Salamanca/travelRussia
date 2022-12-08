@@ -1,0 +1,35 @@
+.place {
+    display: grid;
+    grid-template-columns: minmax(300px, 460px) 484px;
+    margin-bottom: 80px;
+    gap: 48px 40px;
+}
+
+.place:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .place {
+        grid-template-columns: minmax(300px, 440px) 456px;
+        gap: 48px 32px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .place {
+        grid-template-columns: minmax(300px, 340px) 352px;
+        gap: 48px 28px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .place {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
